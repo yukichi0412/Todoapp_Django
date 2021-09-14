@@ -39,8 +39,39 @@
           </div>
         </nav>
       </div>
+
       <div class="column col-md-8">
-        <!-- タスクはここに表示される -->
+        <div class="panel panel-default">
+          <div class="panel-heading">タスク</div>
+          <table class="table">
+            <thead>
+            <tr>
+              <th>タイトル</th>
+              <th>状態</th>
+              <th>期限</th>
+              <th></th>
+            </tr>
+            </thead>
+            <tbody>
+              {% for task in tasks %}
+                <tr>
+                  <td>{{ task.title }}</td>
+                  <td>
+                    <span class="label {% if task.status == 1 %}label-danger{% endif %}{% if task.status == 2 %}label-info{% endif %}">
+                      {{ task.get_status_display }}
+                    </span>
+                  </td>
+                  <td>{{ task.due_date }}</td>
+                  <td><a href="#">編集</a></td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+          <div class="panel-body">
+            <a href="#" class="btn btn-default btn-block">
+              タスクを追加する
+            </a>
+          </div>
       </div>
     </div>
   </div>
