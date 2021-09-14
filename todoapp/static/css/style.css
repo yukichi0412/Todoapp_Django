@@ -1,0 +1,38 @@
+body {
+    background-color: #c3eecd
+}
+
+.navbar{
+    margin: 2rem 0 2.5rem 0;
+}
+
+.my-navbar{
+    align-items: center;
+    background: #474a2c;
+    display: flex;
+    height: 6rem;
+    justify-content: space-between;
+    padding: 0 2%;
+    margin-bottom: 3rem;
+}
+
+.my-navbar-brand {
+    font-size: 20px;
+}
+
+.my-navbar-brand,
+.my-navbar-item {
+    color: #b4e7cf;
+}
+
+.my-navbar-brand:hover,
+a.my-navbar-item:hover {
+    color: #ffffff;
+}
+
+.panel-default>.panel-heading {
+    color: #474a2c;
+    background-color: #9bdeac;
+    border-color: #e6e9ed;
+}
+
