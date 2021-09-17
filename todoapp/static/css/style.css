@@ -1,0 +1,49 @@
+body {
+    background-color: #c3eeee
+}
+
+.navbar{
+    margin: 2rem 0 2.5rem 0;
+}
+
+.my-navbar{
+    align-items: center;
+    background: #474a2c;
+    display: flex;
+    height: 6rem;
+    justify-content: space-between;
+    padding: 0 2%;
+    margin-bottom: 3rem;
+}
+
+.my-navbar-brand {
+    font-size: 20px;
+}
+
+.my-navbar-brand,
+.my-navbar-item {
+    color: #b4d7e7;
+}
+
+.my-navbar-brand:hover,
+a.my-navbar-item:hover {
+    color: #ffffff;
+}
+
+.panel-default>.panel-heading {
+    color: #474a2c;
+    background-color: #b8d2e9;
+    border-color: #e6e9ed;
+}
+
+.table td:nth-child(2),
+  .table td:nth-child(3),
+  .table td:nth-child(4) {
+    white-space: nowrap;
+    width: 1px;
+}
+
+.form-control[disabled],
+  .form-control[readonly] {
+    background-color: #fff;
+  }
