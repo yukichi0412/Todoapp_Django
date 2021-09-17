@@ -49,3 +49,6 @@ def edit_task(request, id, task_id):
     else:
         form = TaskForm(instance=task)
     return render(request, 'todoapp/edit.html', {'form': form}, {'task': task})
+
+def redirectview(request):
+    return redirect('tasks.index', id=1)
