@@ -1,0 +1,2 @@
+https://nomaps.io/2019/09/24/django%EF%BC%8Bsqlalchemy%EF%BC%8Balembic%EF%BC%81/#i-2
+https://blog.yuku-t.com/entry/20110723/1311387822

@@ -3,6 +3,8 @@ from django.db import models
 from django.conf import settings
 from django.utils import timezone
 
+from sqlalchemy import Column, Integer, String, DateTime, Sequence
+
 class Category(models.Model):
     title = models.CharField(max_length=20)
     created_at = models.DateTimeField(default=timezone.now)
