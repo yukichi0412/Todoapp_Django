@@ -3,6 +3,10 @@ from django.shortcuts import get_object_or_404, redirect, render
 from django.utils import timezone
 from .models import Category, Task
 
+import django_filters
+from rest_framework import viewsets, filters
+from .serializer import CategorySerializer, TaskSerializer
+
 # Create your views here.
 def index(request, id):
     categories = Category.objects.filter(created_at__lte=timezone.now()).order_by('created_at')
@@ -52,3 +56,11 @@ def edit_task(request, id, task_id):
 
 def redirectview(request):
     return redirect('tasks.index', id=1)
+
+class CategoryViewSet(viewsets.ModelViewSet):
+    queryset = Category.objects.all()
+    serializer_class = CategorySerializer
+
+class TaskViewSet(viewsets.ModelViewSet):
+    queryset = Task.objects.all()
+    serializer_class = TaskSerializer
