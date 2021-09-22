@@ -1,4 +1,4 @@
-from todoapp.Form import CategoryForm, TaskForm
+from .Form import CategoryForm, TaskForm
 from django.shortcuts import get_object_or_404, redirect, render
 from django.utils import timezone
 from .models import Category, Task
